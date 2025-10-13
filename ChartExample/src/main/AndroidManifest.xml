@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kitlabs.chartexample">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.kitlabs.chartexample.notimportant.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.kitlabs.chartexample.LineChartActivity1" />
+        <activity android:name="com.kitlabs.chartexample.LineChartActivity2" />
+        <activity android:name="com.kitlabs.chartexample.LineChartTime" />
+        <activity android:name="com.kitlabs.chartexample.BarChartActivity" />
+		<activity android:name="com.kitlabs.chartexample.HorizontalBarChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.HorizontalBarNegativeChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.PieChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.PiePolylineChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.MultiLineChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.BarChartActivityMultiDataset" />
+        <activity android:name="com.kitlabs.chartexample.DrawChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.ScatterChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.BubbleChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.fragments.SimpleChartDemo" />
+        <activity android:name="com.kitlabs.chartexample.ListViewBarChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.ListViewMultiChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.StackedBarActivity" />
+        <activity android:name="com.kitlabs.chartexample.AnotherBarActivity" />
+        <activity android:name="com.kitlabs.chartexample.InvertedLineChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.CandleStickChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.CubicLineChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.RadarChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.LineChartActivityColored" />
+        <activity android:name="com.kitlabs.chartexample.DynamicalAddingActivity" />
+        <activity android:name="com.kitlabs.chartexample.RealtimeLineChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.CombinedChartActivity" />
+        <activity android:name="com.kitlabs.chartexample.PerformanceLineChart" />
+        <activity android:name="com.kitlabs.chartexample.BarChartActivitySinus" />
+        <activity android:name="com.kitlabs.chartexample.ScrollViewActivity" />
+        <activity android:name="com.kitlabs.chartexample.StackedBarActivityNegative" />
+        <activity android:name="com.kitlabs.chartexample.BarChartPositiveNegative" />
+        <activity android:name="com.kitlabs.chartexample.FilledLineActivity" />
+        <activity android:name="com.kitlabs.chartexample.HalfPieChartActivity" />
+    </application>
+
+</manifest>

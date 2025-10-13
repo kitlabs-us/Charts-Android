@@ -96,33 +96,3 @@ dependencies {
 **RadarChart** (spider web chart)
 
 ![alt tag](https://raw.github.com/PhilJay/MPAndroidChart/master/screenshots/radarchart.png)
-
-<br/>
-
-<h1 id="license">License :page_facing_up:</h1>
-
-Copyright 2020 Philipp Jahoda
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-> http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-<br/>
-
-<h2 id="creators">Special Thanks :heart:</h2>
-
-These people rock!
-
-- [danielgindi](https://github.com/danielgindi) - Daniel Gindi
-- [mikegr](https://github.com/mikegr) - Michael Greifeneder
-- [tony](https://github.com/tonypatino-monoclesociety) - Tony
-- [almic](https://github.com/almic) - Mick A.
-- [jitpack.io](https://github.com/jitpack-io) - JitPack.io

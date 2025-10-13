@@ -9,6 +9,8 @@ import com.github.kitlabs.charting.components.YAxis;
 import com.github.kitlabs.charting.data.DataSet;
 import com.github.kitlabs.charting.data.Entry;
 import com.github.kitlabs.charting.formatter.IValueFormatter;
+import com.github.kitlabs.charting.formatter.ValueFormatter;
+import com.github.kitlabs.charting.model.GradientColor;
 import com.github.kitlabs.charting.utils.MPPointF;
 
 import java.util.List;
@@ -295,6 +297,28 @@ public interface IDataSet<T extends Entry> {
     int getColor(int index);
 
     /**
+     * Returns the Gradient color model
+     *
+     * @return
+     */
+    GradientColor getGradientColor();
+
+    /**
+     * Returns the Gradient colors
+     *
+     * @return
+     */
+    List<GradientColor> getGradientColors();
+
+    /**
+     * Returns the Gradient colors
+     *
+     * @param index
+     * @return
+     */
+    GradientColor getGradientColor(int index);
+
+    /**
      * returns true if highlighting of values is enabled, false if not
      *
      * @return
@@ -318,7 +342,7 @@ public interface IDataSet<T extends Entry> {
      *
      * @param f
      */
-    void setValueFormatter(IValueFormatter f);
+    void setValueFormatter(ValueFormatter f);
 
     /**
      * Returns the formatter used for drawing the values inside the chart.

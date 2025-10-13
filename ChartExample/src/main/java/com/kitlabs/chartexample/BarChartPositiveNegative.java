@@ -20,6 +20,7 @@ import com.github.kitlabs.charting.data.BarEntry;
 import com.github.kitlabs.charting.data.Entry;
 import com.github.kitlabs.charting.formatter.IAxisValueFormatter;
 import com.github.kitlabs.charting.formatter.IValueFormatter;
+import com.github.kitlabs.charting.formatter.PercentFormatter;
 import com.github.kitlabs.charting.formatter.ValueFormatter;
 import com.github.kitlabs.charting.utils.ViewPortHandler;
 import com.kitlabs.chartexample.notimportant.DemoBase;
@@ -136,12 +137,7 @@ public class BarChartPositiveNegative extends DemoBase {
             BarData data = new BarData(set);
             data.setValueTextSize(13f);
             data.setValueTypeface(tfRegular);
-            data.setValueFormatter(new com.github.kitlabs.charting.formatter.ValueFormatter() {
-                @Override
-                public String getFormattedValue(float value, AxisBase axis) {
-                    return super.getFormattedValue(value, axis);
-                }
-            });
+            data.setValueFormatter(new PercentFormatter());
             data.setBarWidth(0.8f);
 
             chart.setData(data);
@@ -165,7 +161,7 @@ public class BarChartPositiveNegative extends DemoBase {
         }
     }
 
-    private class ValueFormatter implements IValueFormatter
+    /*private class ValueFormatter implements IValueFormatter
     {
 
         private final DecimalFormat mFormat;
@@ -178,7 +174,7 @@ public class BarChartPositiveNegative extends DemoBase {
         public String getFormattedValue(float value, Entry entry, int dataSetIndex, ViewPortHandler viewPortHandler) {
             return mFormat.format(value);
         }
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

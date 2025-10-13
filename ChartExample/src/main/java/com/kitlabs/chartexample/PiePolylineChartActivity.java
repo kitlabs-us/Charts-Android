@@ -23,12 +23,14 @@ import android.widget.TextView;
 
 import com.github.kitlabs.charting.animation.Easing;
 import com.github.kitlabs.charting.charts.PieChart;
+import com.github.kitlabs.charting.components.AxisBase;
 import com.github.kitlabs.charting.components.Legend;
 import com.github.kitlabs.charting.data.Entry;
 import com.github.kitlabs.charting.data.PieData;
 import com.github.kitlabs.charting.data.PieDataSet;
 import com.github.kitlabs.charting.data.PieEntry;
 import com.github.kitlabs.charting.formatter.PercentFormatter;
+import com.github.kitlabs.charting.formatter.ValueFormatter;
 import com.github.kitlabs.charting.highlight.Highlight;
 import com.github.kitlabs.charting.interfaces.datasets.IDataSet;
 import com.github.kitlabs.charting.listener.OnChartValueSelectedListener;
@@ -161,7 +163,12 @@ public class PiePolylineChartActivity extends DemoBase implements OnSeekBarChang
         dataSet.setYValuePosition(PieDataSet.ValuePosition.OUTSIDE_SLICE);
 
         PieData data = new PieData(dataSet);
-        data.setValueFormatter(new PercentFormatter());
+        data.setValueFormatter(new ValueFormatter() {
+            @Override
+            public String getFormattedValue(float value, AxisBase axis) {
+                return super.getFormattedValue(value, axis);
+            }
+        });
         data.setValueTextSize(11f);
         data.setValueTextColor(Color.BLACK);
         data.setValueTypeface(tf);

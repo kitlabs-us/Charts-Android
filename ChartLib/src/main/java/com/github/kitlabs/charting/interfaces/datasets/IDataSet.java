@@ -349,7 +349,7 @@ public interface IDataSet<T extends Entry> {
      *
      * @return
      */
-    IValueFormatter getValueFormatter();
+    ValueFormatter getValueFormatter();
 
     /**
      * Returns true if the valueFormatter object of this DataSet is null.

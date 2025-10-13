@@ -18,11 +18,13 @@ import android.widget.RelativeLayout;
 
 import com.github.kitlabs.charting.animation.Easing;
 import com.github.kitlabs.charting.charts.PieChart;
+import com.github.kitlabs.charting.components.AxisBase;
 import com.github.kitlabs.charting.components.Legend;
 import com.github.kitlabs.charting.data.PieData;
 import com.github.kitlabs.charting.data.PieDataSet;
 import com.github.kitlabs.charting.data.PieEntry;
 import com.github.kitlabs.charting.formatter.PercentFormatter;
+import com.github.kitlabs.charting.formatter.ValueFormatter;
 import com.github.kitlabs.charting.utils.ColorTemplate;
 import com.kitlabs.chartexample.notimportant.DemoBase;
 
@@ -106,7 +108,12 @@ public class HalfPieChartActivity extends DemoBase {
         //dataSet.setSelectionShift(0f);
 
         PieData data = new PieData(dataSet);
-        data.setValueFormatter(new PercentFormatter());
+        data.setValueFormatter(new ValueFormatter() {
+            @Override
+            public String getFormattedValue(float value, AxisBase axis) {
+                return super.getFormattedValue(value, axis);
+            }
+        });
         data.setValueTextSize(11f);
         data.setValueTextColor(Color.WHITE);
         data.setValueTypeface(tfLight);

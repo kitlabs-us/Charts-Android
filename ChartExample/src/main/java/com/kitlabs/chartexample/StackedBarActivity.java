@@ -16,6 +16,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.github.kitlabs.charting.charts.BarChart;
+import com.github.kitlabs.charting.components.AxisBase;
 import com.github.kitlabs.charting.components.Legend;
 import com.github.kitlabs.charting.components.XAxis;
 import com.github.kitlabs.charting.components.XAxis.XAxisPosition;
@@ -24,6 +25,7 @@ import com.github.kitlabs.charting.data.BarData;
 import com.github.kitlabs.charting.data.BarDataSet;
 import com.github.kitlabs.charting.data.BarEntry;
 import com.github.kitlabs.charting.data.Entry;
+import com.github.kitlabs.charting.formatter.ValueFormatter;
 import com.github.kitlabs.charting.highlight.Highlight;
 import com.github.kitlabs.charting.interfaces.datasets.IBarDataSet;
 import com.github.kitlabs.charting.listener.OnChartValueSelectedListener;
@@ -142,7 +144,12 @@ public class StackedBarActivity extends DemoBase implements OnSeekBarChangeListe
             dataSets.add(set1);
 
             BarData data = new BarData(dataSets);
-            data.setValueFormatter(new MyValueFormatter());
+            data.setValueFormatter(new ValueFormatter() {
+                @Override
+                public String getFormattedValue(float value, AxisBase axis) {
+                    return super.getFormattedValue(value, axis);
+                }
+            });
             data.setValueTextColor(Color.WHITE);
 
             chart.setData(data);

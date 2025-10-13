@@ -27,6 +27,7 @@ import com.github.kitlabs.charting.data.BarEntry;
 import com.github.kitlabs.charting.data.Entry;
 import com.github.kitlabs.charting.formatter.IAxisValueFormatter;
 import com.github.kitlabs.charting.formatter.LargeValueFormatter;
+import com.github.kitlabs.charting.formatter.ValueFormatter;
 import com.github.kitlabs.charting.highlight.Highlight;
 import com.github.kitlabs.charting.interfaces.datasets.IBarDataSet;
 import com.github.kitlabs.charting.listener.OnChartValueSelectedListener;
@@ -173,7 +174,12 @@ public class BarChartActivityMultiDataset extends DemoBase implements OnSeekBarC
             set4.setColor(Color.rgb(255, 102, 0));
 
             BarData data = new BarData(set1, set2, set3, set4);
-            data.setValueFormatter(new LargeValueFormatter());
+            data.setValueFormatter(new ValueFormatter() {
+                @Override
+                public String getFormattedValue(float value, AxisBase axis) {
+                    return super.getFormattedValue(value, axis);
+                }
+            });
             data.setValueTypeface(tfLight);
 
             chart.setData(data);

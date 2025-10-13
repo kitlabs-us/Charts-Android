@@ -29,6 +29,7 @@ import com.github.kitlabs.charting.data.PieData;
 import com.github.kitlabs.charting.data.PieDataSet;
 import com.github.kitlabs.charting.data.PieEntry;
 import com.github.kitlabs.charting.formatter.PercentFormatter;
+import com.github.kitlabs.charting.formatter.ValueFormatter;
 import com.github.kitlabs.charting.highlight.Highlight;
 import com.github.kitlabs.charting.interfaces.datasets.IDataSet;
 import com.github.kitlabs.charting.listener.OnChartValueSelectedListener;
@@ -160,7 +161,7 @@ public class PieChartActivity extends DemoBase implements OnSeekBarChangeListene
         //dataSet.setSelectionShift(0f);
 
         PieData data = new PieData(dataSet);
-        data.setValueFormatter(new PercentFormatter());
+        data.setValueFormatter(new ValueFormatter() {});
         data.setValueTextSize(11f);
         data.setValueTextColor(Color.WHITE);
         data.setValueTypeface(tfLight);

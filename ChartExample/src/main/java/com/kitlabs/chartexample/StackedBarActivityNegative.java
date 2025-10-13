@@ -25,6 +25,7 @@ import com.github.kitlabs.charting.data.BarEntry;
 import com.github.kitlabs.charting.data.Entry;
 import com.github.kitlabs.charting.formatter.IValueFormatter;
 import com.github.kitlabs.charting.formatter.IAxisValueFormatter;
+import com.github.kitlabs.charting.formatter.ValueFormatter;
 import com.github.kitlabs.charting.highlight.Highlight;
 import com.github.kitlabs.charting.interfaces.datasets.IBarDataSet;
 import com.github.kitlabs.charting.listener.OnChartValueSelectedListener;
@@ -116,7 +117,12 @@ public class StackedBarActivityNegative extends DemoBase implements
 
         BarDataSet set = new BarDataSet(values, "Age Distribution");
         set.setDrawIcons(false);
-        set.setValueFormatter(new CustomFormatter());
+        set.setValueFormatter(new ValueFormatter() {
+            @Override
+            public String getFormattedValue(float value, AxisBase axis) {
+                return super.getFormattedValue(value, axis);
+            }
+        });
         set.setValueTextSize(7f);
         set.setAxisDependency(YAxis.AxisDependency.RIGHT);
         set.setColors(Color.rgb(67,67,72), Color.rgb(124,181,236));

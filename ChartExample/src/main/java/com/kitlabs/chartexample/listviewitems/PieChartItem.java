@@ -12,10 +12,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import com.github.kitlabs.charting.charts.PieChart;
+import com.github.kitlabs.charting.components.AxisBase;
 import com.github.kitlabs.charting.components.Legend;
 import com.github.kitlabs.charting.data.ChartData;
 import com.github.kitlabs.charting.data.PieData;
 import com.github.kitlabs.charting.formatter.PercentFormatter;
+import com.github.kitlabs.charting.formatter.ValueFormatter;
 import com.github.kitlabs.charting.utils.ColorTemplate;
 import com.kitlabs.chartexample.R;
 
@@ -66,7 +68,12 @@ public class PieChartItem extends ChartItem {
         holder.chart.setUsePercentValues(true);
         holder.chart.setExtraOffsets(5, 10, 50, 10);
 
-        mChartData.setValueFormatter(new PercentFormatter());
+        mChartData.setValueFormatter(new ValueFormatter() {
+            @Override
+            public String getFormattedValue(float value, AxisBase axis) {
+                return super.getFormattedValue(value, axis);
+            }
+        });
         mChartData.setValueTypeface(mTf);
         mChartData.setValueTextSize(11f);
         mChartData.setValueTextColor(Color.WHITE);

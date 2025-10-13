@@ -10,9 +10,6 @@ import java.util.List;
  */
 public interface IBarDataSet extends IBarLineScatterCandleBubbleDataSet<BarEntry> {
 
-    List<Fill> getFills();
-
-    Fill getFill(int index);
 
     /**
      * Returns true if this DataSet is stacked (stacksize > 1) or not.

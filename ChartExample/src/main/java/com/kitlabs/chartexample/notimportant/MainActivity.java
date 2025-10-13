@@ -12,7 +12,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-import com.github.mikephil.charting.utils.Utils;
+import com.github.kitlabs.charting.utils.Utils;
 import com.kitlabs.chartexample.AnotherBarActivity;
 import com.kitlabs.chartexample.BarChartActivity;
 import com.kitlabs.chartexample.BarChartActivityMultiDataset;

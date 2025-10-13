@@ -17,19 +17,19 @@ import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
 
-import com.github.mikephil.charting.charts.HorizontalBarChart;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.XAxis.XAxisPosition;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.highlight.Highlight;
-import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
-import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
-import com.github.mikephil.charting.utils.MPPointF;
+import com.github.kitlabs.charting.charts.HorizontalBarChart;
+import com.github.kitlabs.charting.components.Legend;
+import com.github.kitlabs.charting.components.XAxis;
+import com.github.kitlabs.charting.components.XAxis.XAxisPosition;
+import com.github.kitlabs.charting.components.YAxis;
+import com.github.kitlabs.charting.data.BarData;
+import com.github.kitlabs.charting.data.BarDataSet;
+import com.github.kitlabs.charting.data.BarEntry;
+import com.github.kitlabs.charting.data.Entry;
+import com.github.kitlabs.charting.highlight.Highlight;
+import com.github.kitlabs.charting.interfaces.datasets.IBarDataSet;
+import com.github.kitlabs.charting.listener.OnChartValueSelectedListener;
+import com.github.kitlabs.charting.utils.MPPointF;
 import com.kitlabs.chartexample.notimportant.DemoBase;
 
 import java.util.ArrayList;

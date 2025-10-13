@@ -15,17 +15,17 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
-import com.github.mikephil.charting.charts.ScatterChart;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.ScatterData;
-import com.github.mikephil.charting.data.ScatterDataSet;
-import com.github.mikephil.charting.highlight.Highlight;
-import com.github.mikephil.charting.interfaces.datasets.IScatterDataSet;
-import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
-import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.kitlabs.charting.charts.ScatterChart;
+import com.github.kitlabs.charting.components.Legend;
+import com.github.kitlabs.charting.components.XAxis;
+import com.github.kitlabs.charting.components.YAxis;
+import com.github.kitlabs.charting.data.Entry;
+import com.github.kitlabs.charting.data.ScatterData;
+import com.github.kitlabs.charting.data.ScatterDataSet;
+import com.github.kitlabs.charting.highlight.Highlight;
+import com.github.kitlabs.charting.interfaces.datasets.IScatterDataSet;
+import com.github.kitlabs.charting.listener.OnChartValueSelectedListener;
+import com.github.kitlabs.charting.utils.ColorTemplate;
 import com.kitlabs.chartexample.custom.CustomScatterShapeRenderer;
 import com.kitlabs.chartexample.notimportant.DemoBase;
 

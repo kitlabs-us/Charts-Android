@@ -5,12 +5,12 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.widget.TextView;
 
-import com.github.mikephil.charting.components.MarkerView;
-import com.github.mikephil.charting.data.CandleEntry;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.highlight.Highlight;
-import com.github.mikephil.charting.utils.MPPointF;
-import com.github.mikephil.charting.utils.Utils;
+import com.github.kitlabs.charting.components.MarkerView;
+import com.github.kitlabs.charting.data.CandleEntry;
+import com.github.kitlabs.charting.data.Entry;
+import com.github.kitlabs.charting.highlight.Highlight;
+import com.github.kitlabs.charting.utils.MPPointF;
+import com.github.kitlabs.charting.utils.Utils;
 import com.kitlabs.chartexample.R;
 
 /**

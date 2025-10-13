@@ -16,16 +16,16 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
-import com.github.mikephil.charting.charts.CandleStickChart;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.XAxis.XAxisPosition;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.components.YAxis.AxisDependency;
-import com.github.mikephil.charting.data.CandleData;
-import com.github.mikephil.charting.data.CandleDataSet;
-import com.github.mikephil.charting.data.CandleEntry;
-import com.github.mikephil.charting.interfaces.datasets.ICandleDataSet;
-import com.github.mikephil.charting.interfaces.datasets.IDataSet;
+import com.github.kitlabs.charting.charts.CandleStickChart;
+import com.github.kitlabs.charting.components.XAxis;
+import com.github.kitlabs.charting.components.XAxis.XAxisPosition;
+import com.github.kitlabs.charting.components.YAxis;
+import com.github.kitlabs.charting.components.YAxis.AxisDependency;
+import com.github.kitlabs.charting.data.CandleData;
+import com.github.kitlabs.charting.data.CandleDataSet;
+import com.github.kitlabs.charting.data.CandleEntry;
+import com.github.kitlabs.charting.interfaces.datasets.ICandleDataSet;
+import com.github.kitlabs.charting.interfaces.datasets.IDataSet;
 import com.kitlabs.chartexample.notimportant.DemoBase;
 
 import java.util.ArrayList;

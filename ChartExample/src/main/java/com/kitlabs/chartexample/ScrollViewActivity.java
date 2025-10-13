@@ -8,13 +8,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
 
-import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.XAxis.XAxisPosition;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.kitlabs.charting.charts.BarChart;
+import com.github.kitlabs.charting.components.XAxis;
+import com.github.kitlabs.charting.components.XAxis.XAxisPosition;
+import com.github.kitlabs.charting.data.BarData;
+import com.github.kitlabs.charting.data.BarDataSet;
+import com.github.kitlabs.charting.data.BarEntry;
+import com.github.kitlabs.charting.utils.ColorTemplate;
 import com.kitlabs.chartexample.notimportant.DemoBase;
 
 import java.util.ArrayList;

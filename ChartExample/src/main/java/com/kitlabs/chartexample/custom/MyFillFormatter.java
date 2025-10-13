@@ -1,8 +1,8 @@
 package com.kitlabs.chartexample.custom;
 
-import com.github.mikephil.charting.formatter.IFillFormatter;
-import com.github.mikephil.charting.interfaces.dataprovider.LineDataProvider;
-import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+import com.github.kitlabs.charting.formatter.IFillFormatter;
+import com.github.kitlabs.charting.interfaces.dataprovider.LineDataProvider;
+import com.github.kitlabs.charting.interfaces.datasets.ILineDataSet;
 
 /**
  * Created by Philipp Jahoda on 12/09/15.

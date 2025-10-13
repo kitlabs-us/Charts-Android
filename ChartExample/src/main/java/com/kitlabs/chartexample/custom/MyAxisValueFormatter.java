@@ -1,7 +1,7 @@
 package com.kitlabs.chartexample.custom;
 
-import com.github.mikephil.charting.components.AxisBase;
-import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import com.github.kitlabs.charting.components.AxisBase;
+import com.github.kitlabs.charting.formatter.IAxisValueFormatter;
 
 import java.text.DecimalFormat;
 

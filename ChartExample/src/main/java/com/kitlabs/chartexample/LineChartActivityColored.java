@@ -10,11 +10,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
 
-import com.github.mikephil.charting.charts.LineChart;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.LineData;
-import com.github.mikephil.charting.data.LineDataSet;
+import com.github.kitlabs.charting.charts.LineChart;
+import com.github.kitlabs.charting.components.Legend;
+import com.github.kitlabs.charting.data.Entry;
+import com.github.kitlabs.charting.data.LineData;
+import com.github.kitlabs.charting.data.LineDataSet;
 import com.kitlabs.chartexample.notimportant.DemoBase;
 
 import java.util.ArrayList;

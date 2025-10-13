@@ -1,7 +1,7 @@
 package com.kitlabs.chartexample.custom;
 
-import com.github.mikephil.charting.components.AxisBase;
-import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import com.github.kitlabs.charting.components.AxisBase;
+import com.github.kitlabs.charting.formatter.IAxisValueFormatter;
 
 /**
  * Created by Philipp Jahoda on 14/09/15.

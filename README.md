@@ -6,7 +6,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.kitlabs-us:Charts-Android:1.0'
+    implementation 'com.github.kitlabs-us:Charts-Android:1.0.3'
 }
 ```
 
